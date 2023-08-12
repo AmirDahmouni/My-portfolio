@@ -1,0 +1,504 @@
+import {
+  AcademicCapIcon,
+  ArrowDownTrayIcon,
+  BuildingOffice2Icon,
+  CalendarIcon,
+  FlagIcon,
+  MapIcon,
+  SparklesIcon,
+} from '@heroicons/react/24/outline';
+
+import GithubIcon from '../components/Icon/GithubIcon';
+import LinkedInIcon from '../components/Icon/LinkedInIcon';
+import heroImage from '../images/header-background.webp';
+import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
+import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
+import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
+import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
+import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
+import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
+import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
+import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
+import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
+import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
+import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+import profilepic from '../images/profilepic.jpg';
+import testimonialImage from '../images/testimonial.webp';
+import {
+  About,
+  ContactSection,
+  ContactType,
+  Hero,
+  HomepageMeta,
+  PortfolioItem,
+  SkillGroup,
+  Social,
+  TestimonialSection,
+  TimelineItem,
+} from './dataDef';
+
+
+export const homePageMeta: HomepageMeta = {
+  title: 'Portfolio Amir Dahmouni',
+  description: "Portfolio Amir Full-Stack web developer",
+};
+
+
+export const SectionIdFr = {
+  Hero: 'hero',
+  About: 'À propos',
+  Contact: 'Contact',
+  Portfolio: 'Portfolio',
+  Resume: 'Parcours',
+  Skills: 'Compétences'
+} as const;
+
+export type SectionIdFr = typeof SectionIdFr[keyof typeof SectionIdFr];
+
+
+export const heroDataFr: Hero = {
+  imageSrc: heroImage,
+  name: `Amir Dahmouni`,
+  description: (
+    <>
+      <p className="text-white sm:prose-base lg:prose-lg" style={{ fontSize: "20px" }}>
+        Je suis très motivé <strong className="text-stone-100">Développeur Front-End</strong>,
+        Enthousiaste à l'idée d'embrasser de nouveaux défis et de livrer
+        Avec une mentalité <strong className="text-stone-100">forte axée </strong> sur l'équipe et une passion pour la résolution de problèmes
+      </p>
+      <p className="text-white sm:prose-base lg:prose-lg" style={{ fontSize: "20px" }}>
+        Pendant mon temps libre, j'essaie d'améliorer mes compétences à la fois en compétences
+        <strong className="text-stone-100" style={{ color: "rgb(251 146 60)" }}> humaines</strong> et
+        <strong className="text-stone-100" style={{ color: "rgb(251 146 60)" }}> techniques</strong>.
+      </p>
+    </>
+  ),
+  actions: [
+    {
+      href: '/assets/resume.pdf',
+      text: 'CV',
+      primary: true,
+      Icon: ArrowDownTrayIcon,
+    },
+    {
+      href: `#${SectionIdFr.Contact}`,
+      text: 'Contact',
+      primary: false,
+    },
+  ],
+};
+
+
+export const aboutDataFr: About = {
+  profileImageSrc: profilepic,
+  description: `Enthousiaste et axé sur les résultats en tant que développeur Front-End, je suis dynamisé par la prise de nouveaux
+    défis et l'expansion continue de mes compétences. Je suis passionné par la création d'expériences web captivantes et centrées sur l'utilisateur.
+    La collaboration est au cœur de ma démarche, et je prends un immense plaisir à travailler harmonieusement avec des équipes pluridisciplinaires
+    pour atteindre des objectifs communs.`,
+  aboutItems: [
+    { label: 'Localisation', text: 'Nice, France', Icon: MapIcon },
+    { label: 'Age', text: '25', Icon: CalendarIcon },
+    { label: 'Nationality', text: 'Tunisien', Icon: FlagIcon },
+    { label: "centres d'intérêt", text: 'Devops', Icon: SparklesIcon },
+    { label: "Études", text: 'Ingénieur informatique', Icon: AcademicCapIcon },
+    { label: 'Employeur actuel', text: 'Genext Factory', Icon: BuildingOffice2Icon },
+  ],
+};
+
+
+export const skillsFr: SkillGroup[] = [
+  {
+    name: 'Langues parlées',
+    skills: [
+      {
+        name: 'Francais',
+        level: 9,
+      },
+      {
+        name: 'Anglais',
+        level: 6,
+      },
+      {
+        name: 'Arabe',
+        level: 5,
+      }
+    ],
+  },
+  {
+    name: 'Langages de programmation',
+    skills: [
+      {
+        name: 'Typescript',
+        level: 7,
+      },
+      {
+        name: 'Javascript',
+        level: 7,
+      },
+      {
+        name: 'Python',
+        level: 6,
+      }
+    ],
+  },
+  {
+    name: 'Développement Frontend',
+    skills: [
+      {
+        name: 'React.js',
+        level: 8,
+      },
+      {
+        name: 'Redux-Saga',
+        level: 8,
+      },
+      {
+        name: 'Next.js',
+        level: 7,
+      },
+      {
+        name: 'React Native',
+        level: 4,
+      },
+      {
+        name: 'Angular',
+        level: 3,
+      },
+      {
+        name: 'Apollo Client',
+        level: 3
+      }
+    ],
+  },
+  {
+    name: 'Développement Backend',
+    skills: [
+      {
+        name: 'Node.js',
+        level: 8,
+      },
+      {
+        name: 'Express.js',
+        level: 8,
+      },
+      {
+        name: 'Strapi',
+        level: 7,
+      },
+      {
+        name: 'Nest.js',
+        level: 5,
+      },
+      {
+        name: 'Socket.IO',
+        level: 5,
+      },
+      {
+        name: 'GraphQL',
+        level: 5,
+      }
+    ],
+  },
+  {
+    name: 'Base des données',
+    skills: [
+      {
+        name: 'MongoDB',
+        level: 8,
+      },
+      {
+        name: 'Mysql',
+        level: 8,
+      }
+    ],
+  },
+  {
+    name: 'Déploiement',
+    skills: [
+      {
+        name: 'Git',
+        level: 8,
+      },
+      {
+        name: 'Docker',
+        level: 8,
+      }
+    ],
+  },
+  {
+    name: 'Test',
+    skills: [
+      {
+        name: 'Cypress.io',
+        level: 6,
+      },
+      {
+        name: 'React Testing Library',
+        level: 5,
+      }
+    ],
+  },
+  {
+    name: 'Méthodologies',
+    skills: [
+      {
+        name: 'Agile Scrum',
+        level: 6,
+      },
+      {
+        name: 'Kanban',
+        level: 5,
+      }
+    ],
+  }
+];
+
+
+export const portfolioItems: PortfolioItem[] = [
+  {
+    title: 'Project title 1',
+    description: 'Give a short description of your project here.',
+    url: 'https://timbaker.me',
+    image: porfolioImage1,
+  },
+  {
+    title: 'Project title 2',
+    description: 'Give a short description of your project here.',
+    url: 'https://timbaker.me',
+    image: porfolioImage2,
+  },
+  {
+    title: 'Project title 3',
+    description: 'Give a short description of your project here.',
+    url: 'https://timbaker.me',
+    image: porfolioImage3,
+  },
+  {
+    title: 'Project title 4',
+    description: 'Give a short description of your project here.',
+    url: 'https://timbaker.me',
+    image: porfolioImage4,
+  },
+  {
+    title: 'Project title 5',
+    description: 'Give a short description of your project here.',
+    url: 'https://timbaker.me',
+    image: porfolioImage5,
+  },
+  {
+    title: 'Project title 6',
+    description: 'Give a short description of your project here.',
+    url: 'https://timbaker.me',
+    image: porfolioImage6,
+  },
+  {
+    title: 'Project title 7',
+    description: 'Give a short description of your project here.',
+    url: 'https://timbaker.me',
+    image: porfolioImage7,
+  },
+  {
+    title: 'Project title 8',
+    description: 'Give a short description of your project here.',
+    url: 'https://timbaker.me',
+    image: porfolioImage8,
+  },
+  {
+    title: 'Project title 9',
+    description: 'Give a short description of your project here.',
+    url: 'https://timbaker.me',
+    image: porfolioImage9,
+  },
+  {
+    title: 'Project title 10',
+    description: 'Give a short description of your project here.',
+    url: 'https://timbaker.me',
+    image: porfolioImage10,
+  },
+  {
+    title: 'Project title 11',
+    description: 'Give a short description of your project here.',
+    url: 'https://timbaker.me',
+    image: porfolioImage11,
+  },
+];
+
+export const educationFr: TimelineItem[] = [
+  {
+    date: 'Septembre 2017 – Juin 2019',
+    location: 'Institut supérieur des sciences appliqués et technologies de Sousse, Tunisia',
+    title: 'Cycle Préparatoire Intégré',
+    content: <p>Mathématiques Appliquées, Physique, Algorithmes, Architecture Informatique et Systèmes Linux</p>
+  },
+  {
+    date: 'Septembre 2019 – Juin 2022',
+    location: 'Institut supérieur des sciences appliqués et technologies de Sousse, Tunisia',
+    title: 'Diplôme National en Ingénierie Informatique',
+    content: <p>Architecture Logicielle, Algorithmes Avancés et Gestion de Base de Données. Développement Web et Développement Logiciel en utilisant Java, Python et JavaScript.</p>
+  },
+];
+
+export const personnalProjectsFr: TimelineItem[] = [
+  {
+    date: 'January 2022 - Present',
+    location: 'Proxym-IT, Sousse',
+    title: 'Ingénieur génie logiciel',
+    content: (
+      <>
+        <p>
+          <a href="" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Game Library</span></a>
+          <br></br>
+          Mon projet, Game Library, a été conçu en utilisant Chakra UI pour les composants de l'interface utilisateur. Il permet aux utilisateurs
+          de parcourir et d'afficher des jeux récupérés à partir d'une API RAWG. L'application propose divers filtres, tels que la recherche par
+          nom de jeu, le filtrage des jeux par leur disponibilité sur différentes plateformes, la sélection de genres de jeux spécifiques et le tri
+          des jeux par date. Pour gérer efficacement le flux de données et gérer les opérations asynchrones, j'ai implémenté Redux-Sagas. Ce middleware
+          puissant permet une gestion transparente des données. La bibliothèque comprend une page de connexion. La fonctionnalité de pagination divise
+          les résultats des jeux en plusieurs pages, offrant une expérience de navigation conviviale.
+        </p>
+        <p style={{ marginTop: "20px" }}>
+          <a href="" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Weather</span></a>
+          <br></br>● Implemented new website pages using React.js, Next.js and Strapi API (CMS) to fetch data, while leveraging Reactstrap for design and UI components.
+        </p>
+        <p style={{ marginTop: "20px" }}>
+          <a href="" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Cinema</span></a>
+          <br></br>● Implement new filters in the product module of the outlets in the back office.
+
+        </p>
+      </>
+    ),
+  },
+
+]
+
+
+export const internshipsFr: TimelineItem[] = [
+  {
+    date: 'July 2021 - August 2021',
+    location: 'Proxym-IT, Sousse',
+    title: 'Ingénieur logiciel',
+    content: (
+      <p>
+        J'ai participé au développement d'une application web qui sert de plateforme pour connecter les étudiants et les professeurs afin de recueillir les opinions des étudiants sur l'avancement des cours.
+        <br></br>● J'ai mis en œuvre des services web RESTful en utilisant Node.js et Express.js pour permettre des opérations CRUD et une communication fluide entre le front-end, la base de données et le système backend.
+        <br></br>● Gérer l'authentification et l'autorisation en utilisant JWT (JSON Web Tokens).
+        <br></br>● Intégration d'un modèle dans des composants React réutilisables et consommation de l'API en utilisant Axios au niveau de React.
+        <br></br>● Intégrer Joi pour optimiser la validation du schéma du formulaire et garantir la validation du format des données lorsque les utilisateurs remplissent des formulaires côté frontend.
+        <br></br>● J'ai travaillé en collaboration avec l'équipe de développement dans un environnement Agile (Scrum).
+        <br></br>● Soumission des demandes d'extraction (pull requests) pour les branches, ouvrant des problèmes (+20 commits, +5 branches).
+      </p>
+    ),
+  },
+  {
+    date: 'Juin 2022 - Decembre 2022',
+    location: 'Fleet, Paris',
+    title: 'Ingénieur logiciel',
+    content: (
+      <p>
+        <a href="https://fleet.co/" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Fleet</span></a>
+        <br></br> J'ai travaillé sur une solution de gestion de parc informatique pour les parcs technologiques, en mettant l'accent sur les startups et les PME.
+        <br></br>● Mis en place de nouvelles pages de site web et amélioré celles déjà existantes en utilisant Next.js et Contentful (CMS) pour récupérer les données, en utilisant le système de conception Fleet.
+        <br></br>● Participer à la mise en œuvre de l'API Locize pour maintenir le site web complet dans 4 langues (anglais, français, espagnol, allemand).
+        <br></br>● Améliorer les filtres dans le catalogue d'équipements et renforcé la fonction de recherche avec des composants React issus du système de conception Fleet.
+        <br></br>● Corriger des problèmes de composants du système de conception et republié une nouvelle version du package dans le référentiel NPM.
+        <br></br>● Contribuer au développement d'un algorithme d'aide à la décision qui prédit la probabilité qu'une banque accepte les demandes de financement d'équipements informatiques pour chaque client. Cet algorithme a été conçu pour les administrateurs en backoffice et utilise des données provenant d'une base de données de production PostgreSQL. Le processus de développement a impliqué une collaboration avec un analyste de données en utilisant Python et Node.js.
+        <br></br>● Participer à la mise en œuvre de tests de bout en bout au sein des pipelines CI/CD sur GitHub Actions. Ces tests visaient à protéger notre solution en production et à garantir sa fonctionnalité continue en utilisant Cypress.io.
+        <br></br>● Travailler en collaboration avec l'équipe de développement dans un environnement Agile (Scrum).
+        <br></br>● Acquérir des connaissances sur les meilleures pratiques et les fondamentaux du code propre grâce aux revues de code.
+        <br></br>● Soumission des demandes d'extraction (pull requests) pour les branches ouvrant des problèmes et pour de nouvelles fonctionnalités (+70 commits).
+      </p>
+    ),
+  },
+];
+
+
+export const experienceFr: TimelineItem[] = [
+  {
+    date: 'January 2022 - Present',
+    location: 'Genext Factory, Sousse',
+    title: 'Ingénieur logiciel',
+    content: (
+      <>
+        <p>
+          <a href="https://www.genextfactory.com/" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Genext Factory website</span></a>
+          <br></br>● Mis en place de nouvelles pages de site web en utilisant React.js, Next.js et l'API Strapi (CMS) pour récupérer les données, tout en utilisant Reactstrap pour la conception et les composants d'interface utilisateur.
+          <br></br>● Intégration de la traduction en utilisant react-i18next, le plugin i18n de Strapi et un dictionnaire local.
+          <br></br>● Mis en place plus de 5 tests unitaires en utilisant Jest et React Testing Library pour un composant React complexe.
+          <br></br>● Collaborer avec l'équipe de développement dans un environnement Agile (Scrum).
+        </p>
+        <p style={{ marginTop: "20px" }}>
+          <span className="text-center font-bold"> Edumonde </span>
+          <br></br>● Mis en œuvre de nouvelles pages de site web en utilisant React.js, Next.js et l'API Strapi (CMS) pour récupérer les données, en utilisant Reactstrap pour la conception et les composants d'interface utilisateur.
+          <br></br>● Utilisation de Strapi pour développer des types de contenu dans le back office et mise en œuvre de crochets de cycle de vie pour partager des cours sur notre solution Saas, Odesco.
+          <br></br>● Intégration de la traduction en utilisant le plugin i18n de Strapi dans le back office et la traduction i18next comme dictionnaire local pour la traduction côté front-end.
+        </p>
+        <p style={{ marginTop: "20px" }}>
+          <span className="text-center font-bold"> ClickStore (soldx) </span>
+          <br></br>● Mise en place de nouveaux filtres dans le module de produits des points de vente dans le back office.
+          <br></br>● Répliquer la configuration au niveau de la catégorie de produits dans le back office.
+          <br></br>● Mise en place d'un nouveau point de terminaison pour récupérer les commentaires sur les produits et les magasins en utilisant Node.js, Express.js et MongoDB.
+          <br></br>● Mise en place d'une nouvelle interface utilisateur en utilisant Angular qui affiche les commentaires et les produits favoris.
+          <br></br>● Résoudre le bug de pagination dans les listes du back office.
+          <br></br>● Résoudre les bugs de jointure et d'authentification dans l'API Node.js.
+          <br></br>● Résoudre le problème dans le panier d'achat qui se produit lors du paiement de produits avec des réductions sur le site web.
+        </p>
+      </>
+    ),
+  },
+
+]
+
+export const testimonial: TestimonialSection = {
+  imageSrc: testimonialImage,
+  testimonials: [
+    {
+      name: 'John Doe',
+      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
+      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+    },
+    {
+      name: 'Jane Doe',
+      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
+      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
+    },
+    {
+      name: 'Someone else',
+      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
+      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+    },
+  ],
+};
+
+
+
+export const contactFr: ContactSection = {
+  headerText: 'Contact',
+  description: 'Je suis joignable aux coordonnées suivantes.',
+  items: [
+    {
+      type: ContactType.Email,
+      text: 'dahmouni.amir@gmail.com',
+      href: 'dahmouni.amir@gmail.com',
+    },
+    {
+      type: ContactType.Phone,
+      text: '06 78 89 55 66',
+      href: '',
+    },
+    {
+      type: ContactType.Location,
+      text: 'Nice, France',
+      href: 'https://www.google.ca/maps/place/Nice,+France/@43.7031657,7.1704112,12z',
+    },
+    {
+      type: ContactType.Github,
+      text: 'Github',
+      href: 'https://github.com/AmirDahmouni',
+    },
+  ],
+};
+
+
+export const socialLinks: Social[] = [
+  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/AmirDahmouni' },
+  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/amir-dahmouni/' }
+];
