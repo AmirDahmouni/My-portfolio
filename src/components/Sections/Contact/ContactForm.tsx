@@ -1,6 +1,6 @@
 "use client";
 import { FC, memo, useCallback, useMemo, useState } from 'react';
-
+import { sendMail } from '@/email';
 interface FormData {
   name: string;
   email: string;
@@ -33,9 +33,7 @@ const ContactForm: FC = memo(() => {
   const handleSendMessage = useCallback(
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
-      /**
-       * This is a good starting point to wire up your form submission logic
-       * */
+      await sendEmail(data.email, data.name, data.message);
       console.log('Data to send: ', data);
     },
     [data],

@@ -98,8 +98,8 @@ export const aboutDataFr: About = {
   aboutItems: [
     { label: 'Localisation', text: 'Nice, France', Icon: MapIcon },
     { label: 'Age', text: '25', Icon: CalendarIcon },
-    { label: 'Nationality', text: 'Tunisien', Icon: FlagIcon },
-    { label: "centres d'intérêt", text: 'Devops', Icon: SparklesIcon },
+    { label: 'Nationalité', text: 'Tunisien', Icon: FlagIcon },
+    { label: "Centres d'intérêt", text: 'Devops', Icon: SparklesIcon },
     { label: "Études", text: 'Ingénieur informatique', Icon: AcademicCapIcon },
     { label: 'Employeur actuel', text: 'Genext Factory', Icon: BuildingOffice2Icon },
   ],
@@ -356,13 +356,21 @@ export const personnalProjectsFr: TimelineItem[] = [
           les résultats des jeux en plusieurs pages, offrant une expérience de navigation conviviale.
         </p>
         <p style={{ marginTop: "20px" }}>
-          <a href="" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Weather</span></a>
-          <br></br>● Implemented new website pages using React.js, Next.js and Strapi API (CMS) to fetch data, while leveraging Reactstrap for design and UI components.
+          <a href="" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Cinema Library</span></a>
+          <br></br>
+          Mon projet utilise Chakra UI pour les composants de l'interface utilisateur, permettant aux utilisateurs d'explorer et de présenter des films 
+          provenant de l'API TMDb. L'application propose divers filtres tels que la recherche par nom, le filtrage par genre et la sélection de langue, 
+          tandis que les options de tri incluent la date de sortie. Développé avec Next.js, le projet optimise la gestion des données grâce à Redux-Sagas 
+          pour les tâches asynchrones. Ce middleware robuste garantit un flux de données fluide. Améliorée par la pagination, l'application assure une 
+          navigation sans heurts sur plusieurs pages, améliorant l'interaction avec l'utilisateur.
         </p>
         <p style={{ marginTop: "20px" }}>
-          <a href="" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Cinema</span></a>
-          <br></br>● Implement new filters in the product module of the outlets in the back office.
-
+          <a href="" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Weather - Application Intuitive de Prévisions Météo</span></a>
+          <br></br>
+           C'est un projet axé sur l'interface conçu en utilisant CSS pour présenter les composants utilisateur. Alimentée par l'API OpenWeatherMap,
+           elle offre des prévisions météo hebdomadaires complètes. En exploitant l'API OpenCageData, l'application intègre une détection de géolocalisation.
+           Les utilisateurs peuvent personnaliser leurs favoris pour un accès rapide aux prévisions des villes sélectionnées. Ce projet met en avant mes 
+           compétences en conception d'interface utilisateur, en intégration d'API et mon engagement à améliorer les expériences quotidiennes.
         </p>
       </>
     ),
@@ -378,12 +386,12 @@ export const internshipsFr: TimelineItem[] = [
     title: 'Ingénieur logiciel',
     content: (
       <p>
-        J'ai participé au développement d'une application web qui sert de plateforme pour connecter les étudiants et les professeurs afin de recueillir les opinions des étudiants sur l'avancement des cours.
-        <br></br>● J'ai mis en œuvre des services web RESTful en utilisant Node.js et Express.js pour permettre des opérations CRUD et une communication fluide entre le front-end, la base de données et le système backend.
+        Participer au développement d'une application web qui sert de plateforme pour connecter les étudiants et les professeurs afin de recueillir les opinions des étudiants sur l'avancement des cours.
+        <br></br>● Mis en œuvre des services web RESTful en utilisant Node.js et Express.js pour permettre des opérations CRUD et une communication fluide entre le front-end, la base de données et le système backend.
         <br></br>● Gérer l'authentification et l'autorisation en utilisant JWT (JSON Web Tokens).
         <br></br>● Intégration d'un modèle dans des composants React réutilisables et consommation de l'API en utilisant Axios au niveau de React.
         <br></br>● Intégrer Joi pour optimiser la validation du schéma du formulaire et garantir la validation du format des données lorsque les utilisateurs remplissent des formulaires côté frontend.
-        <br></br>● J'ai travaillé en collaboration avec l'équipe de développement dans un environnement Agile (Scrum).
+        <br></br>● travailler en collaboration avec l'équipe de développement dans un environnement Agile (Scrum).
         <br></br>● Soumission des demandes d'extraction (pull requests) pour les branches, ouvrant des problèmes (+20 commits, +5 branches).
       </p>
     ),
@@ -395,13 +403,13 @@ export const internshipsFr: TimelineItem[] = [
     content: (
       <p>
         <a href="https://fleet.co/" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Fleet</span></a>
-        <br></br> J'ai travaillé sur une solution de gestion de parc informatique pour les parcs technologiques, en mettant l'accent sur les startups et les PME.
+        <br></br> travailler sur une solution de gestion de parc informatique pour les parcs technologiques, en mettant l'accent sur les startups et les PME.
         <br></br>● Mis en place de nouvelles pages de site web et amélioré celles déjà existantes en utilisant Next.js et Contentful (CMS) pour récupérer les données, en utilisant le système de conception Fleet.
         <br></br>● Participer à la mise en œuvre de l'API Locize pour maintenir le site web complet dans 4 langues (anglais, français, espagnol, allemand).
         <br></br>● Améliorer les filtres dans le catalogue d'équipements et renforcé la fonction de recherche avec des composants React issus du système de conception Fleet.
         <br></br>● Corriger des problèmes de composants du système de conception et republié une nouvelle version du package dans le référentiel NPM.
         <br></br>● Contribuer au développement d'un algorithme d'aide à la décision qui prédit la probabilité qu'une banque accepte les demandes de financement d'équipements informatiques pour chaque client. Cet algorithme a été conçu pour les administrateurs en backoffice et utilise des données provenant d'une base de données de production PostgreSQL. Le processus de développement a impliqué une collaboration avec un analyste de données en utilisant Python et Node.js.
-        <br></br>● Participer à la mise en œuvre de tests de bout en bout au sein des pipelines CI/CD sur GitHub Actions. Ces tests visaient à protéger notre solution en production et à garantir sa fonctionnalité continue en utilisant Cypress.io.
+        <br></br>● Participer à la mise en œuvre de tests de bout en bout au sein des pipelines CI/CD sur GitHub Actions. Ces tests visaient à protéger notre solution en production et à garantir sa fonctionnement continue en utilisant Cypress.io.
         <br></br>● Travailler en collaboration avec l'équipe de développement dans un environnement Agile (Scrum).
         <br></br>● Acquérir des connaissances sur les meilleures pratiques et les fondamentaux du code propre grâce aux revues de code.
         <br></br>● Soumission des demandes d'extraction (pull requests) pour les branches ouvrant des problèmes et pour de nouvelles fonctionnalités (+70 commits).
@@ -432,11 +440,19 @@ export const experienceFr: TimelineItem[] = [
           <br></br>● Intégration de la traduction en utilisant le plugin i18n de Strapi dans le back office et la traduction i18next comme dictionnaire local pour la traduction côté front-end.
         </p>
         <p style={{ marginTop: "20px" }}>
+          <span className="text-center font-bold"> Fabulous consulting </span>
+          <br></br>● Mis en œuvre de nouvelles pages de site web en utilisant React.js, Next.js et l'API Strapi (CMS) pour récupérer les données, en utilisant Reactstrap pour la conception et les composants d'interface utilisateur.
+          <br></br>● Utilisation de Strapi pour développer des types de contenu dans le back-office et intégration du plugin Strapi Stripe pour proposer des paiements en ligne via différents modes.
+          <br></br>● Intégration de la traduction en utilisant le plugin i18n de Strapi dans le back office et la traduction i18next comme dictionnaire local pour la traduction côté front-end.
+        </p>
+        <p style={{ marginTop: "20px" }}>
           <span className="text-center font-bold"> ClickStore (soldx) </span>
           <br></br>● Mise en place de nouveaux filtres dans le module de produits des points de vente dans le back office.
           <br></br>● Répliquer la configuration au niveau de la catégorie de produits dans le back office.
           <br></br>● Mise en place d'un nouveau point de terminaison pour récupérer les commentaires sur les produits et les magasins en utilisant Node.js, Express.js et MongoDB.
-          <br></br>● Mise en place d'une nouvelle interface utilisateur en utilisant Angular qui affiche les commentaires et les produits favoris.
+          <br></br>● Mise en place d'une nouvelle interface backoffice manager en utilisant Angular qui affiche les commentaires et les produits favoris.
+          <br></br>● Mise en place d'un nouveau point de terminaison pour récupérer les gagnants des coupons par boutique en utilisant Node.js, Express.js et MongoDB.
+          <br></br>● Mise en place d'une nouvelle interface backoffice manager pour afficher les gagnants des coupons.
           <br></br>● Résoudre le bug de pagination dans les listes du back office.
           <br></br>● Résoudre les bugs de jointure et d'authentification dans l'API Node.js.
           <br></br>● Résoudre le problème dans le panier d'achat qui se produit lors du paiement de produits avec des réductions sur le site web.

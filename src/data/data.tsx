@@ -346,7 +346,7 @@ export const personnalProjects: TimelineItem[] = [
       <>
         <p>
           <a href="" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Game Library</span></a>
-          <br></br>●
+          <br></br>
           My project, Game Library, was designed using Chakra UI for the user interface components. It allows users to browse and
           display games fetched from a RAWG API. The application features various filters, such as searching by game name,
           filtering games by their availability on different platforms, selecting specific game genres, and sorting games by date.
@@ -355,13 +355,19 @@ export const personnalProjects: TimelineItem[] = [
           The pagination functionality divides the game results into multiple pages, providing a user-friendly browsing experience.
         </p>
         <p style={{ marginTop: "20px" }}>
-          <a href="" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Weather</span></a>
-          <br></br>● Implemented new website pages using React.js, Next.js and Strapi API (CMS) to fetch data, while leveraging Reactstrap for design and UI components.
+          <a href="" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Cinema Library</span></a>
+          <br></br>
+          My project utilizes Chakra UI for UI components, enabling users to explore and showcase movies sourced from the TMDb API. 
+          The app offers diverse filters like name-based search, genre-based filtering, and language selection, while sorting options include release date.
+          Developed with Next.js, the project optimizes data handling through Redux-Sagas for asynchronous tasks. The robust middleware ensures smooth data
+          flow. Enhanced by pagination, the app ensures seamless navigation across multiple pages, enhancing user interaction.
         </p>
         <p style={{ marginTop: "20px" }}>
-          <a href="" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Cinema</span></a>
-          <br></br>● Implement new filters in the product module of the outlets in the back office.
-
+          <a href="" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Weather- Intuitive Weather Forecast App</span></a>
+          <br></br>
+          My project is an interface-focused project crafted using CSS to present user components. Powered by OpenWeatherMap API, it delivers a comprehensive 
+          weekly weather forecast. Leveraging OpenCageData API, the app features geolocation detection. Users can curate favorites for quick access
+          to weather in chosen cities. This project showcases my UI/UX skills, API integration, and commitment to enhancing daily experiences.
         </p>
       </>
     ),
@@ -380,7 +386,7 @@ export const internships: TimelineItem[] = [
         Participated in the development of a web application which serves as a platform for connecting students and professors to gather student opinions about the progress of courses.
         <br></br>● implemented RESTful web services using Node.js and Express.js to enable CRUD operations and seamless communication between the front-end, database, and backend system.
         <br></br>● Manage authentication and authorization using JWT
-        <br></br>● Integrating a template into reusable React components and consuming the API using Axios at the React level.
+        <br></br>● Integrating a reusable React components and consuming the API using Axios at the React level.
         <br></br>● Integrate Joi to optimize modal schema validation and ensure data format validation when users fill forms on the frontend.
         <br></br>● Co-worked with the development team in an Agile Environment (Scrum).
         <br></br>● Made pull requests for branches Opening Issues (+20 commit, +5 branches).
@@ -426,16 +432,24 @@ export const experience: TimelineItem[] = [
         </p>
         <p style={{ marginTop: "20px" }}>
           <span className="text-center font-bold"> Edumonde </span>
-          <br></br>● Implemented new website pages using React.js, Next.js and Strapi API (CMS) to fetch data, while leveraging Reactstrap for design and UI components.
+          <br></br>● Implemented new website pages using React.js, Next.js and Strapi API (CMS) to fetch data, while leveraging Tailwind for design and UI components.
           <br></br>● Use of Strapi for developing content types in the back office and implementing lifecycles hooks for sharing courses on our Saas solution, Odesco.
+          <br></br>● Integrate translation using the Strapi i18n plugin in the back office and i18next translation as local dictionnary for front-end translation
+        </p>
+        <p style={{ marginTop: "20px" }}>
+          <span className="text-center font-bold"> Fabulous Consulting </span>
+          <br></br>● Implemented web pages in React.js, Next.js and Strapi API (CMS) to fetch data, while leveraging Tailwind for design and UI components.
+          <br></br>● Utilization of Strapi to create content types within the back office, coupled with the integration of the Strapi Stripe plugin to facilitate online payments through various modes.
           <br></br>● Integrate translation using the Strapi i18n plugin in the back office and i18next translation as local dictionnary for front-end translation
         </p>
         <p style={{ marginTop: "20px" }}>
           <span className="text-center font-bold"> ClickStore (soldx) </span>
           <br></br>● Implement new filters in the product module of the outlets in the back office.
           <br></br>● Replicate the product category level configuration in the back office.
-          <br></br>● Implement a new endpoint to fetch products and stores comments using Node.js, Express.js and MongoDB.
-          <br></br>● Implement a new User interface using Angular that displays comments and favorite products.
+          <br></br>● Implement new endpoint to fetch products and stores comments using Node.js,Express.js, MongoDB.
+          <br></br>● Setting up a new backoffice manager interface using Angular to display comments and favorite products.
+          <br></br>● Implementation of a new endpoint to retrieve coupon winners per store using Node.js, Express.js, and MongoDB.
+          <br></br>● Setting up a new back office manager interface to display prizes winners.
           <br></br>● Fix the pagination bug in the lists of the back office.
           <br></br>● Fix join and authentication bugs in the Node.js API.
           <br></br>● Fix the issue in the shopping cart that occurs during the payment of discounted products on the website.
