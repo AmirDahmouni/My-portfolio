@@ -1,6 +1,7 @@
 var nodemailer = require("nodemailer");
 //-----------------------------------------------------------------------------
 export async function sendMail(name:string, email:string, message:string) {
+  console.log("===============>",name,email,message)
   var transporter = nodemailer.createTransport({
     service: "SMPT",
     port: 587,

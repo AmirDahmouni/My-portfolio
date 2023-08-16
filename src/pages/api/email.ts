@@ -2,14 +2,13 @@ import { sendMail } from "../../service/mailService"
 const handler = async (req:any, res:any) => {
   try {
     const { method } = req;
-    console.log(req.body)
     switch (method) {
       case "POST": {
         //Do some thing
         await sendMail(
-          req.name,
-          req.email,
-          req.message
+          req.body.name,
+          req.body.email,
+          req.body.message
         );
         res.status(200).send("Success");
         break;

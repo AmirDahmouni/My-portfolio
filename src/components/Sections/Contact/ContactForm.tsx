@@ -1,6 +1,6 @@
 "use client";
 import { FC, memo, useCallback, useMemo, useState } from 'react';
-import { sendMail } from '@/email';
+import handler from '@/pages/api/api_four';
 interface FormData {
   name: string;
   email: string;
@@ -33,8 +33,13 @@ const ContactForm: FC = memo(() => {
   const handleSendMessage = useCallback(
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
-      await sendEmail(data.email, data.name, data.message);
-      console.log('Data to send: ', data);
+      await fetch("/api/email", {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      },)
     },
     [data],
   );
