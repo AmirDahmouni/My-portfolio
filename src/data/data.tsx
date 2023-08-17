@@ -95,7 +95,7 @@ export const aboutData: About = {
   Collaboration is at the heart of my approach, and I take immense pleasure in working harmoniously with cross-functional teams
   to achieve common objectives .`,
   aboutItems: [
-    { label: 'Location', text: 'Nice, France', Icon: MapIcon },
+    { label: 'Location', text: 'Sousse, Tunisia', Icon: MapIcon },
     { label: 'Age', text: '25', Icon: CalendarIcon },
     { label: 'Nationality', text: 'Tunisian', Icon: FlagIcon },
     { label: 'Interests', text: 'Devops, Checkers', Icon: SparklesIcon },
@@ -345,7 +345,7 @@ export const personnalProjects: TimelineItem[] = [
     content: (
       <>
         <p>
-          <a href="" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Game Library</span></a>
+          <a href="https://github.com/AmirDahmouni/Game_library" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Game Library</span></a>
           <br></br>
           My project, Game Library, was designed using Chakra UI for the user interface components. It allows users to browse and
           display games fetched from a RAWG API. The application features various filters, such as searching by game name,
@@ -355,9 +355,9 @@ export const personnalProjects: TimelineItem[] = [
           The pagination functionality divides the game results into multiple pages, providing a user-friendly browsing experience.
         </p>
         <p style={{ marginTop: "20px" }}>
-          <a href="" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Cinema Library</span></a>
+          <a href="https://github.com/AmirDahmouni/Cinema_library" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Cinema Library</span></a>
           <br></br>
-          My project utilizes Chakra UI for UI components, enabling users to explore and showcase movies sourced from the TMDb API. 
+          My project utilizes Chakra UI for UI components, enabling users to explore and showcase movies sourced from the TMDb API.
           The app offers diverse filters like name-based search, genre-based filtering, and language selection, while sorting options include release date.
           Developed with Next.js, the project optimizes data handling through Redux-Sagas for asynchronous tasks. The robust middleware ensures smooth data
           flow. Enhanced by pagination, the app ensures seamless navigation across multiple pages, enhancing user interaction.
@@ -365,7 +365,7 @@ export const personnalProjects: TimelineItem[] = [
         <p style={{ marginTop: "20px" }}>
           <a href="" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Weather- Intuitive Weather Forecast App</span></a>
           <br></br>
-          My project is an interface-focused project crafted using CSS to present user components. Powered by OpenWeatherMap API, it delivers a comprehensive 
+          My project is an interface-focused project crafted using CSS to present user components. Powered by OpenWeatherMap API, it delivers a comprehensive
           weekly weather forecast. Leveraging OpenCageData API, the app features geolocation detection. Users can curate favorites for quick access
           to weather in chosen cities. This project showcases my UI/UX skills, API integration, and commitment to enhancing daily experiences.
         </p>
@@ -431,13 +431,13 @@ export const experience: TimelineItem[] = [
           <br></br>● Co-worked with the development team in an Agile Environment (Scrum).
         </p>
         <p style={{ marginTop: "20px" }}>
-          <span className="text-center font-bold"> Edumonde </span>
+          <a href="https://dev.edumonde.tn/" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold"> Edumonde </span></a>
           <br></br>● Implemented new website pages using React.js, Next.js and Strapi API (CMS) to fetch data, while leveraging Tailwind for design and UI components.
           <br></br>● Use of Strapi for developing content types in the back office and implementing lifecycles hooks for sharing courses on our Saas solution, Odesco.
           <br></br>● Integrate translation using the Strapi i18n plugin in the back office and i18next translation as local dictionnary for front-end translation
         </p>
         <p style={{ marginTop: "20px" }}>
-          <span className="text-center font-bold"> Fabulous Consulting </span>
+          <a href="https://dev-training-center.odesco.education/" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold"> Fabulous consulting </span></a>
           <br></br>● Implemented web pages in React.js, Next.js and Strapi API (CMS) to fetch data, while leveraging Tailwind for design and UI components.
           <br></br>● Utilization of Strapi to create content types within the back office, coupled with the integration of the Strapi Stripe plugin to facilitate online payments through various modes.
           <br></br>● Integrate translation using the Strapi i18n plugin in the back office and i18next translation as local dictionnary for front-end translation
@@ -494,13 +494,13 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.Phone,
-      text: '06 78 89 55 66',
+      text: '+216 26 580 724',
       href: '',
     },
     {
       type: ContactType.Location,
-      text: 'Nice, France',
-      href: 'https://www.google.ca/maps/place/Nice,+France/@43.7031657,7.1704112,12z',
+      text: 'Sousse, Tunisia',
+      href: 'https://www.google.ca/maps/place/Sousse/@35.8285312,10.616832,14z/data=!4m6!3m5!1s0x130275759ac9d10d:0x698e3915682cef7d!8m2!3d35.8245029!4d10.634584!16zL20vMDN5djZy?entry=ttu',
     },
     {
       type: ContactType.Github,

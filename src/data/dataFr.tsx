@@ -96,7 +96,7 @@ export const aboutDataFr: About = {
     La collaboration est au cœur de ma démarche, et je prends un immense plaisir à travailler harmonieusement avec des équipes pluridisciplinaires
     pour atteindre des objectifs communs.`,
   aboutItems: [
-    { label: 'Localisation', text: 'Nice, France', Icon: MapIcon },
+    { label: 'Localisation', text: 'Sousse, Tunisie', Icon: MapIcon },
     { label: 'Age', text: '25', Icon: CalendarIcon },
     { label: 'Nationalité', text: 'Tunisien', Icon: FlagIcon },
     { label: "Centres d'intérêt", text: 'Devops', Icon: SparklesIcon },
@@ -358,19 +358,19 @@ export const personnalProjectsFr: TimelineItem[] = [
         <p style={{ marginTop: "20px" }}>
           <a href="" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Cinema Library</span></a>
           <br></br>
-          Mon projet utilise Chakra UI pour les composants de l'interface utilisateur, permettant aux utilisateurs d'explorer et de présenter des films 
-          provenant de l'API TMDb. L'application propose divers filtres tels que la recherche par nom, le filtrage par genre et la sélection de langue, 
-          tandis que les options de tri incluent la date de sortie. Développé avec Next.js, le projet optimise la gestion des données grâce à Redux-Sagas 
-          pour les tâches asynchrones. Ce middleware robuste garantit un flux de données fluide. Améliorée par la pagination, l'application assure une 
+          Mon projet utilise Chakra UI pour les composants de l'interface utilisateur, permettant aux utilisateurs d'explorer et de présenter des films
+          provenant de l'API TMDb. L'application propose divers filtres tels que la recherche par nom, le filtrage par genre et la sélection de langue,
+          tandis que les options de tri incluent la date de sortie. Développé avec Next.js, le projet optimise la gestion des données grâce à Redux-Sagas
+          pour les tâches asynchrones. Ce middleware robuste garantit un flux de données fluide. Améliorée par la pagination, l'application assure une
           navigation sans heurts sur plusieurs pages, améliorant l'interaction avec l'utilisateur.
         </p>
         <p style={{ marginTop: "20px" }}>
           <a href="" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Weather - Application Intuitive de Prévisions Météo</span></a>
           <br></br>
-           C'est un projet axé sur l'interface conçu en utilisant CSS pour présenter les composants utilisateur. Alimentée par l'API OpenWeatherMap,
-           elle offre des prévisions météo hebdomadaires complètes. En exploitant l'API OpenCageData, l'application intègre une détection de géolocalisation.
-           Les utilisateurs peuvent personnaliser leurs favoris pour un accès rapide aux prévisions des villes sélectionnées. Ce projet met en avant mes 
-           compétences en conception d'interface utilisateur, en intégration d'API et mon engagement à améliorer les expériences quotidiennes.
+          C'est un projet axé sur l'interface conçu en utilisant CSS pour présenter les composants utilisateur. Alimentée par l'API OpenWeatherMap,
+          elle offre des prévisions météo hebdomadaires complètes. En exploitant l'API OpenCageData, l'application intègre une détection de géolocalisation.
+          Les utilisateurs peuvent personnaliser leurs favoris pour un accès rapide aux prévisions des villes sélectionnées. Ce projet met en avant mes
+          compétences en conception d'interface utilisateur, en intégration d'API et mon engagement à améliorer les expériences quotidiennes.
         </p>
       </>
     ),
@@ -434,13 +434,13 @@ export const experienceFr: TimelineItem[] = [
           <br></br>● Collaborer avec l'équipe de développement dans un environnement Agile (Scrum).
         </p>
         <p style={{ marginTop: "20px" }}>
-          <span className="text-center font-bold"> Edumonde </span>
+          <a href="https://dev.edumonde.tn/" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold"> Edumonde </span></a>
           <br></br>● Mis en œuvre de nouvelles pages de site web en utilisant React.js, Next.js et l'API Strapi (CMS) pour récupérer les données, en utilisant Reactstrap pour la conception et les composants d'interface utilisateur.
           <br></br>● Utilisation de Strapi pour développer des types de contenu dans le back office et mise en œuvre de crochets de cycle de vie pour partager des cours sur notre solution Saas, Odesco.
           <br></br>● Intégration de la traduction en utilisant le plugin i18n de Strapi dans le back office et la traduction i18next comme dictionnaire local pour la traduction côté front-end.
         </p>
         <p style={{ marginTop: "20px" }}>
-          <span className="text-center font-bold"> Fabulous consulting </span>
+          <a href="https://dev-training-center.odesco.education/" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold"> Fabulous consulting </span></a>
           <br></br>● Mis en œuvre de nouvelles pages de site web en utilisant React.js, Next.js et l'API Strapi (CMS) pour récupérer les données, en utilisant Reactstrap pour la conception et les composants d'interface utilisateur.
           <br></br>● Utilisation de Strapi pour développer des types de contenu dans le back-office et intégration du plugin Strapi Stripe pour proposer des paiements en ligne via différents modes.
           <br></br>● Intégration de la traduction en utilisant le plugin i18n de Strapi dans le back office et la traduction i18next comme dictionnaire local pour la traduction côté front-end.
@@ -497,13 +497,13 @@ export const contactFr: ContactSection = {
     },
     {
       type: ContactType.Phone,
-      text: '06 78 89 55 66',
+      text: '+216 26 580 724',
       href: '',
     },
     {
       type: ContactType.Location,
-      text: 'Nice, France',
-      href: 'https://www.google.ca/maps/place/Nice,+France/@43.7031657,7.1704112,12z',
+      text: 'Sousse, Tunisie',
+      href: 'https://www.google.ca/maps/place/Sousse/@35.8285312,10.616832,14z/data=!4m6!3m5!1s0x130275759ac9d10d:0x698e3915682cef7d!8m2!3d35.8245029!4d10.634584!16zL20vMDN5djZy?entry=ttu',
     },
     {
       type: ContactType.Github,
