@@ -1,5 +1,5 @@
 import { sendMail } from "../../service/mailService"
-const handler = async (req:any, res:any) => {
+const handler = async (req: any, res: any) => {
   try {
     const { method } = req;
     switch (method) {
@@ -23,7 +23,7 @@ const handler = async (req:any, res:any) => {
         res.status(405).end(`Method ${method} Not Allowed`);
         break;
     }
-  } catch (err) {
+  } catch (err: any) {
     res.status(400).json({
       error_code: "api_one",
       message: err.message,
