@@ -1,6 +1,6 @@
 "use client";
 import { FC, memo, useCallback, useMemo, useState } from 'react';
-import handler from '@/pages/api/api_four';
+
 interface FormData {
   name: string;
   email: string;
@@ -49,11 +49,11 @@ const ContactForm: FC = memo(() => {
 
   return (
     <form className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage}>
-      <input className={inputClasses} name="name" onChange={onChange} placeholder="Name" style={{padding:"10px"}} required type="text" />
+      <input className={inputClasses} name="name" onChange={onChange} placeholder="Name" style={{ padding: "10px" }} required type="text" />
       <input
         autoComplete="email"
         className={inputClasses}
-        style={{padding:"10px"}}
+        style={{ padding: "10px" }}
         name="email"
         onChange={onChange}
         placeholder="Email"
@@ -63,7 +63,7 @@ const ContactForm: FC = memo(() => {
       <textarea
         className={inputClasses}
         maxLength={250}
-        style={{padding:"10px"}}
+        style={{ padding: "10px" }}
         name="message"
         onChange={onChange}
         placeholder="Message"
