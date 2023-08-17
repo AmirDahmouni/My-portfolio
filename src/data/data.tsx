@@ -74,7 +74,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: '/assets/Amir CV.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -363,7 +363,7 @@ export const personnalProjects: TimelineItem[] = [
           flow. Enhanced by pagination, the app ensures seamless navigation across multiple pages, enhancing user interaction.
         </p>
         <p style={{ marginTop: "20px" }}>
-          <a href="" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Weather- Intuitive Weather Forecast App</span></a>
+          <a href="https://github.com/AmirDahmouni/Weather_APP" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Weather- Intuitive Weather Forecast App</span></a>
           <br></br>
           My project is an interface-focused project crafted using CSS to present user components. Powered by OpenWeatherMap API, it delivers a comprehensive
           weekly weather forecast. Leveraging OpenCageData API, the app features geolocation detection. Users can curate favorites for quick access

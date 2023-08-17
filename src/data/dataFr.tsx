@@ -75,7 +75,7 @@ export const heroDataFr: Hero = {
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: '/assets/Amir CV.pdf',
       text: 'CV',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -346,7 +346,7 @@ export const personnalProjectsFr: TimelineItem[] = [
     content: (
       <>
         <p>
-          <a href="" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Game Library</span></a>
+          <a href="https://github.com/AmirDahmouni/Game_library" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Game Library</span></a>
           <br></br>
           Mon projet, Game Library, a été conçu en utilisant Chakra UI pour les composants de l'interface utilisateur. Il permet aux utilisateurs
           de parcourir et d'afficher des jeux récupérés à partir d'une API RAWG. L'application propose divers filtres, tels que la recherche par
@@ -356,7 +356,7 @@ export const personnalProjectsFr: TimelineItem[] = [
           les résultats des jeux en plusieurs pages, offrant une expérience de navigation conviviale.
         </p>
         <p style={{ marginTop: "20px" }}>
-          <a href="" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Cinema Library</span></a>
+          <a href="https://github.com/AmirDahmouni/Cinema_library" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Cinema Library</span></a>
           <br></br>
           Mon projet utilise Chakra UI pour les composants de l'interface utilisateur, permettant aux utilisateurs d'explorer et de présenter des films
           provenant de l'API TMDb. L'application propose divers filtres tels que la recherche par nom, le filtrage par genre et la sélection de langue,
@@ -365,7 +365,7 @@ export const personnalProjectsFr: TimelineItem[] = [
           navigation sans heurts sur plusieurs pages, améliorant l'interaction avec l'utilisateur.
         </p>
         <p style={{ marginTop: "20px" }}>
-          <a href="" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Weather - Application Intuitive de Prévisions Météo</span></a>
+          <a href="https://github.com/AmirDahmouni/Weather_APP" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Weather - Application Intuitive de Prévisions Météo</span></a>
           <br></br>
           C'est un projet axé sur l'interface conçu en utilisant CSS pour présenter les composants utilisateur. Alimentée par l'API OpenWeatherMap,
           elle offre des prévisions météo hebdomadaires complètes. En exploitant l'API OpenCageData, l'application intègre une détection de géolocalisation.
