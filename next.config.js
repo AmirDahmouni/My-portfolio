@@ -2,6 +2,7 @@
 const nextTranslate = require('next-translate-plugin')
 
 const nextConfig = {
+  output: 'export',
   i18n: {
     locales: ['en', 'fr'],
     defaultLocale: 'en',
