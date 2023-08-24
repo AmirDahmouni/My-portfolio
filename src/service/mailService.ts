@@ -1,5 +1,5 @@
 var nodemailer = require("nodemailer");
-//-----------------------------------------------------------------------------
+
 export async function sendMail(name:string, email:string, message:string) {
   
   var transporter = nodemailer.createTransport({
@@ -20,14 +20,11 @@ export async function sendMail(name:string, email:string, message:string) {
     text: message,
   };
 
-  console.log(mailOptions)
 
   transporter.sendMail(mailOptions, function (error:string, info:string) {
     if (error) {
-      console.log(error);
-      throw new Error(error);
+      throw new Error(error)
     } else {
-      console.log("sucess");
       return true;
     }
   });
