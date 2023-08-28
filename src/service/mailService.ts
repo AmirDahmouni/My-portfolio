@@ -1,9 +1,9 @@
 var nodemailer = require("nodemailer");
 
-export async function sendMail(name:string, email:string, message:string) {
-  
+export async function sendMail(name: string, email: string, message: string) {
+
   var transporter = nodemailer.createTransport({
-    service:'gmail',
+    service: 'gmail',
     host: 'smtp.gmail.com',
     port: 587,
     secure: true,
@@ -21,10 +21,12 @@ export async function sendMail(name:string, email:string, message:string) {
   };
 
 
-  transporter.sendMail(mailOptions, function (error:string, info:string) {
+  transporter.sendMail(mailOptions, function (error: string, info: string) {
     if (error) {
+      console.log(error)
       throw new Error(error)
     } else {
+      console.log(info)
       return true;
     }
   });
