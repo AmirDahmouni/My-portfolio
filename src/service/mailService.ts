@@ -1,8 +1,9 @@
 var nodemailer = require("nodemailer");
+var smtpTransport = require('nodemailer-smtp-transport');
 
 export async function sendMail(name: string, email: string, message: string) {
 
-  var transporter = nodemailer.createTransport({
+  var transporter = nodemailer.createTransport(smtpTransport({
     service: 'gmail',
     host: 'smtp.gmail.com',
     port: 587,
@@ -11,7 +12,8 @@ export async function sendMail(name: string, email: string, message: string) {
       user: process.env.EMAIL_USER,
       pass: process.env.EMAIL_PASSWORD,
     },
-  });
+    authMethod: 'PLAIN',
+  }));
 
   var mailOptions = {
     from: email,
@@ -20,12 +22,5 @@ export async function sendMail(name: string, email: string, message: string) {
     text: message,
   };
 
-
-  transporter.sendMail(mailOptions, function (error: string, info: string) {
-    if (error) {
-      return false
-    } else {
-      return true;
-    }
-  });
+  await transporter.sendMail(mailOptions);
 }
