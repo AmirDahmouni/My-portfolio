@@ -6,5 +6,11 @@
     "Skills": "Compétences",
     "About": "À propos de moi",
     "Check": "Extrait de mon Travail",
-    "en": "Anglais"
+    "en": "Anglais",
+    "Congra": "Félicitation",
+    "Error": "Erreur",
+    "contact_success": "Votre message a été envoyé avec succès",
+    "contact_fail": "Error de l'envoie du message !",
+    "Name": "Nom et prénom",
+    "Send_Message": "Envoyer le message"
 }

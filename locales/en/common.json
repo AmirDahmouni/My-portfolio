@@ -6,5 +6,11 @@
     "Skills": "Skills",
     "About": "About me",
     "Check": "Check out some of my work",
-    "fr": "french"
+    "fr": "french",
+    "Congra": "Congratulation",
+    "Error": "Error",
+    "contact_success": "Your message has been successfully sent !",
+    "contact_fail": "Opps ! Error sending message",
+    "Name": "Name",
+    "Send_Message": "Send Message"
 }

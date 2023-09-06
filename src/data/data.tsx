@@ -11,17 +11,14 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/header-background.webp';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+import porfolioImage1 from '../images/portfolio/portfolio-1.png';
+import porfolioImage2 from '../images/portfolio/portfolio-2.png';
+import porfolioImage3 from '../images/portfolio/portfolio-3.png';
+import porfolioImage4 from '../images/portfolio/portfolio-4.png';
+import porfolioImage5 from '../images/portfolio/portfolio-5.png';
+import porfolioImage6 from '../images/portfolio/portfolio-6.png';
+import porfolioImage7 from '../images/portfolio/portfolio-7.png';
+import porfolioImage8 from '../images/portfolio/portfolio-8.png';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -95,7 +92,9 @@ export const aboutData: About = {
   Collaboration is at the heart of my approach, and I take immense pleasure in working harmoniously with cross-functional teams
   to achieve common objectives .`,
   aboutItems: [
-    { label: 'Location', text: 'Sousse, Tunisia', Icon: MapIcon },
+    {
+      label: 'Location', text: "Provence-Alpes-Côte d'Azur", Icon: MapIcon
+    },
     { label: 'Age', text: '25', Icon: CalendarIcon },
     { label: 'Nationality', text: 'Tunisian', Icon: FlagIcon },
     { label: 'Interests', text: 'Devops, Checkers', Icon: SparklesIcon },
@@ -111,7 +110,7 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'French',
-        level: 9,
+        level: 8,
       },
       {
         name: 'English',
@@ -119,7 +118,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Arabic',
-        level: 5,
+        level: 9,
       }
     ],
   },
@@ -136,7 +135,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Python',
-        level: 6,
+        level: 5,
       }
     ],
   },
@@ -203,11 +202,11 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'MongoDB',
-        level: 8,
+        level: 6,
       },
       {
         name: 'Mysql',
-        level: 8,
+        level: 6,
       }
     ],
   },
@@ -216,11 +215,11 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'Git',
-        level: 8,
+        level: 5,
       },
       {
         name: 'Docker',
-        level: 8,
+        level: 5,
       }
     ],
   },
@@ -255,71 +254,54 @@ export const skills: SkillGroup[] = [
 
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Games library',
+    description: 'Main page of my personnal project.',
+    url: 'https://game-library-roan.vercel.app/',
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Games library',
+    description: 'Details game page of my personnal project',
+    url: 'https://game-library-roan.vercel.app/',
     image: porfolioImage2,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Edumonde',
+    description: 'Home page of Edumonde website.',
+    url: 'https://dev.edumonde.tn/',
     image: porfolioImage3,
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Fabulous consulting',
+    description: 'Home page of fabulous consulting website',
+    url: 'https://dev-training-center.odesco.education/',
     image: porfolioImage4,
   },
   {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'genextfactory website',
+    description: 'Why choose us section',
+    url: 'https://www.genextfactory.com',
     image: porfolioImage5,
   },
   {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'genextfactory website',
+    description: 'Shortcut of home page',
+    url: 'https://www.genextfactory.com',
     image: porfolioImage6,
   },
   {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Fleet website',
+    description: 'Blog page that i created',
+    url: 'https://fleet.co/',
     image: porfolioImage7,
   },
   {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Weather app',
+    description: 'Weather delivers a comprehensive weekly weather forecast ',
+    url: 'https://weather-app-snowy-sigma.vercel.app/',
     image: porfolioImage8,
   },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage11,
-  },
+
 ];
 
 export const education: TimelineItem[] = [
@@ -345,7 +327,12 @@ export const personnalProjects: TimelineItem[] = [
     content: (
       <>
         <p>
-          <a href="https://github.com/AmirDahmouni/Game_library" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Game Library</span></a>
+          <a href="https://game-library-roan.vercel.app" style={{ color: "rgb(251 146 60)" }}>
+            <span className="text-center font-bold">Game Library</span>
+            <span style={{ color: "gray", fontWeight: "bold", fontSize: "14px" }}> : Next.js, React.js, Redux-Sagas, ChakraUi </span>
+          </a>
+          <br></br>
+          <span style={{ color: "rgb(80 80 200)", fontWeight: "bold", fontSize: "14px" }}>username: Amir password: root</span>
           <br></br>
           My project, Game Library, was designed using Chakra UI for the user interface components. It allows users to browse and
           display games fetched from a RAWG API. The application features various filters, such as searching by game name,
@@ -355,7 +342,10 @@ export const personnalProjects: TimelineItem[] = [
           The pagination functionality divides the game results into multiple pages, providing a user-friendly browsing experience.
         </p>
         <p style={{ marginTop: "20px" }}>
-          <a href="https://github.com/AmirDahmouni/Cinema_library" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Cinema Library</span></a>
+          <a href="https://cinema-library.vercel.app" style={{ color: "rgb(251 146 60)" }}>
+            <span className="text-center font-bold">Cinema Library</span>
+            <span style={{ color: "gray", fontWeight: "bold", fontSize: "14px" }}> : React.js, Redux-Sagas, ChakraUi </span>
+          </a>
           <br></br>
           My project utilizes Chakra UI for UI components, enabling users to explore and showcase movies sourced from the TMDb API.
           The app offers diverse filters like name-based search, genre-based filtering, and language selection, while sorting options include release date.
@@ -363,7 +353,10 @@ export const personnalProjects: TimelineItem[] = [
           flow. Enhanced by pagination, the app ensures seamless navigation across multiple pages, enhancing user interaction.
         </p>
         <p style={{ marginTop: "20px" }}>
-          <a href="https://github.com/AmirDahmouni/Weather_APP" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Weather- Intuitive Weather Forecast App</span></a>
+          <a href="https://weather-app-snowy-sigma.vercel.app" style={{ color: "rgb(251 146 60)" }}>
+            <span className="text-center font-bold">Weather- Intuitive Weather Forecast App</span>
+            <span style={{ color: "gray", fontWeight: "bold", fontSize: "14px" }}> : Node.js, Express.js, Mongodb, React.js, context hooks </span>
+          </a>
           <br></br>
           My project is an interface-focused project crafted using CSS to present user components. Powered by OpenWeatherMap API, it delivers a comprehensive
           weekly weather forecast. Leveraging OpenCageData API, the app features geolocation detection. Users can curate favorites for quick access
@@ -383,6 +376,9 @@ export const internships: TimelineItem[] = [
     title: 'Software Engineer',
     content: (
       <p>
+        <a href="" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Feedback</span></a>
+        <span style={{ color: "gray", fontWeight: "bold", fontSize: "14px" }}> : Node.js, Express.js, Mongodb, React.js</span>
+        <br></br>
         Participated in the development of a web application which serves as a platform for connecting students and professors to gather student opinions about the progress of courses.
         <br></br>● implemented RESTful web services using Node.js and Express.js to enable CRUD operations and seamless communication between the front-end, database, and backend system.
         <br></br>● Manage authentication and authorization using JWT
@@ -400,6 +396,7 @@ export const internships: TimelineItem[] = [
     content: (
       <p>
         <a href="https://fleet.co/" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Fleet</span></a>
+        <span style={{ color: "gray", fontWeight: "bold", fontSize: "14px" }}> : Node.js, Express.js, PostgresQL, React.js, context hooks, Cypress.io </span>
         <br></br> I worked in a fleet's solution for IT park management, catering specifically to startups and SMEs.
         <br></br>● Implemented new website pages and enhanced existing ones using Next.js and Contentful (CMS) to fetch data, utilizing the Fleet design system
         <br></br>● Participated in the Implementation of Locize API to maintain the website comprehensive in 4 languages (English, French, Spanish, German)
@@ -418,13 +415,14 @@ export const internships: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'January 2022 - Present',
+    date: 'January 2023 - August 2023',
     location: 'Genext Factory, Sousse',
     title: 'Software Engineer',
     content: (
       <>
         <p>
           <a href="https://www.genextfactory.com/" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Genext Factory website</span></a>
+          <span style={{ color: "gray", fontWeight: "bold", fontSize: "14px" }}> : Strapi , React.js, Next.js, i18-next, Reactstrap</span>
           <br></br>● Implemented new website pages using React.js, Next.js and Strapi API (CMS) to fetch data, while leveraging Reactstrap for design and UI components.
           <br></br>● Integration of translation using react-i18next, the Strapi i18n plugin, and a local dictionary.
           <br></br>● Implemented +5 unit tests using Jest and React Testing Library for a complex React component
@@ -432,18 +430,21 @@ export const experience: TimelineItem[] = [
         </p>
         <p style={{ marginTop: "20px" }}>
           <a href="https://dev.edumonde.tn/" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold"> Edumonde </span></a>
+          <span style={{ color: "gray", fontWeight: "bold", fontSize: "14px" }}> : Strapi , React.js, Next.js, i18-next, Tailwind</span>
           <br></br>● Implemented new website pages using React.js, Next.js and Strapi API (CMS) to fetch data, while leveraging Tailwind for design and UI components.
           <br></br>● Use of Strapi for developing content types in the back office and implementing lifecycles hooks for sharing courses on our Saas solution, Odesco.
           <br></br>● Integrate translation using the Strapi i18n plugin in the back office and i18next translation as local dictionnary for front-end translation
         </p>
         <p style={{ marginTop: "20px" }}>
           <a href="https://dev-training-center.odesco.education/" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold"> Fabulous consulting </span></a>
+          <span style={{ color: "gray", fontWeight: "bold", fontSize: "14px" }}> : Strapi , React.js, Next.js, Tailwind</span>
           <br></br>● Implemented web pages in React.js, Next.js and Strapi API (CMS) to fetch data, while leveraging Tailwind for design and UI components.
           <br></br>● Utilization of Strapi to create content types within the back office, coupled with the integration of the Strapi Stripe plugin to facilitate online payments through various modes.
           <br></br>● Integrate translation using the Strapi i18n plugin in the back office and i18next translation as local dictionnary for front-end translation
         </p>
         <p style={{ marginTop: "20px" }}>
           <span className="text-center font-bold"> ClickStore (soldx) </span>
+          <span style={{ color: "gray", fontWeight: "bold", fontSize: "14px" }}> : Node.js ,Express.js, React.js, Redux-sagas, Reactstrapi</span>
           <br></br>● Implement new filters in the product module of the outlets in the back office.
           <br></br>● Replicate the product category level configuration in the back office.
           <br></br>● Implement new endpoint to fetch products and stores comments using Node.js,Express.js, MongoDB.
@@ -499,8 +500,8 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.Location,
-      text: 'Sousse, Tunisia',
-      href: 'https://www.google.ca/maps/place/Sousse/@35.8285312,10.616832,14z/data=!4m6!3m5!1s0x130275759ac9d10d:0x698e3915682cef7d!8m2!3d35.8245029!4d10.634584!16zL20vMDN5djZy?entry=ttu',
+      text: "Provence-Alpes-Côte d'Azur",
+      href: "https://www.google.com/maps/place/Nice,+France/@43.7032898,7.1704112,12z/data=!3m1!4b1!4m15!1m8!3m7!1s0x12b668198af953ad:0xb71690263d16d1a7!2sProvence-Alpes-C%C3%B4te+d'Azur,+France!3b1!8m2!3d43.9351691!4d6.0679194!16zL20vMDFjN250!3m5!1s0x12cdd0106a852d31:0x40819a5fd979a70!8m2!3d43.7101728!4d7.2619532!16zL20vMGNwNnc?entry=ttu",
     },
     {
       type: ContactType.Github,

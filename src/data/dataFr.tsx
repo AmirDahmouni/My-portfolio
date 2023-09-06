@@ -62,14 +62,12 @@ export const heroDataFr: Hero = {
   description: (
     <>
       <p className="text-white sm:prose-base lg:prose-lg" style={{ fontSize: "20px" }}>
-        Je suis très motivé <strong className="text-stone-100">Développeur Front-End</strong>,
-        Enthousiaste à l'idée d'embrasser de nouveaux défis et de livrer
-        Avec une mentalité <strong className="text-stone-100">forte axée </strong> sur l'équipe et une passion pour la résolution de problèmes
-      </p>
-      <p className="text-white sm:prose-base lg:prose-lg" style={{ fontSize: "20px" }}>
-        Pendant mon temps libre, j'essaie d'améliorer mes compétences à la fois en compétences
-        <strong className="text-stone-100" style={{ color: "rgb(251 146 60)" }}> humaines</strong> et
-        <strong className="text-stone-100" style={{ color: "rgb(251 146 60)" }}> techniques</strong>.
+        Je suis un <strong className="text-stone-100">Développeur Front-End</strong>,
+        très motivé, passionné par les nouveaux défis et déterminé à fournir des résultats exceptionnels.
+        Mon approche de travail est centrée sur <strong className="text-stone-100">l'esprit d'équipe </strong>.
+        <br></br>J'ai une forte passion pour résoudre
+        des problèmes complexes. En dehors de mes heures de travail, je m'efforce constamment d'améliorer
+        à la fois mes compétences techniques et mes aptitudes interpersonnelles
       </p>
     </>
   ),
@@ -96,9 +94,11 @@ export const aboutDataFr: About = {
     La collaboration est au cœur de ma démarche, et je prends un immense plaisir à travailler harmonieusement avec des équipes pluridisciplinaires
     pour atteindre des objectifs communs.`,
   aboutItems: [
-    { label: 'Localisation', text: 'Sousse, Tunisie', Icon: MapIcon },
+    {
+      label: 'Localisation', text: "Provence-Alpes-Côte d'Azur", Icon: MapIcon
+    },
     { label: 'Age', text: '25', Icon: CalendarIcon },
-    { label: 'Nationalité', text: 'Tunisien', Icon: FlagIcon },
+    { label: 'Nationalité', text: 'Tunisienne', Icon: FlagIcon },
     { label: "Centres d'intérêt", text: 'Devops', Icon: SparklesIcon },
     { label: "Études", text: 'Ingénieur informatique', Icon: AcademicCapIcon },
     { label: 'Employeur actuel', text: 'Genext Factory', Icon: BuildingOffice2Icon },
@@ -112,7 +112,7 @@ export const skillsFr: SkillGroup[] = [
     skills: [
       {
         name: 'Francais',
-        level: 9,
+        level: 8,
       },
       {
         name: 'Anglais',
@@ -120,7 +120,7 @@ export const skillsFr: SkillGroup[] = [
       },
       {
         name: 'Arabe',
-        level: 5,
+        level: 8,
       }
     ],
   },
@@ -137,7 +137,7 @@ export const skillsFr: SkillGroup[] = [
       },
       {
         name: 'Python',
-        level: 6,
+        level: 5,
       }
     ],
   },
@@ -204,11 +204,11 @@ export const skillsFr: SkillGroup[] = [
     skills: [
       {
         name: 'MongoDB',
-        level: 8,
+        level: 5,
       },
       {
         name: 'Mysql',
-        level: 8,
+        level: 5,
       }
     ],
   },
@@ -217,11 +217,11 @@ export const skillsFr: SkillGroup[] = [
     skills: [
       {
         name: 'Git',
-        level: 8,
+        level: 5,
       },
       {
         name: 'Docker',
-        level: 8,
+        level: 5,
       }
     ],
   },
@@ -346,7 +346,10 @@ export const personnalProjectsFr: TimelineItem[] = [
     content: (
       <>
         <p>
-          <a href="https://github.com/AmirDahmouni/Game_library" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Game Library</span></a>
+          <a href="https://game-library-roan.vercel.app" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Game Library</span></a>
+          <span style={{ color: "gray", fontWeight: "bold", fontSize: "14px" }}> : Next.js, React.js, Redux-Sagas, ChakraUi </span>
+          <br></br>
+          <span style={{ color: "rgb(80 80 200)", fontWeight: "bold", fontSize: "14px" }}>username: Amir password: root</span>
           <br></br>
           Mon projet, Game Library, a été conçu en utilisant Chakra UI pour les composants de l'interface utilisateur. Il permet aux utilisateurs
           de parcourir et d'afficher des jeux récupérés à partir d'une API RAWG. L'application propose divers filtres, tels que la recherche par
@@ -356,7 +359,10 @@ export const personnalProjectsFr: TimelineItem[] = [
           les résultats des jeux en plusieurs pages, offrant une expérience de navigation conviviale.
         </p>
         <p style={{ marginTop: "20px" }}>
-          <a href="https://github.com/AmirDahmouni/Cinema_library" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Cinema Library</span></a>
+          <a href="https://cinema-library.vercel.app" style={{ color: "rgb(251 146 60)" }}>
+            <span className="text-center font-bold">Cinema Library</span>
+            <span style={{ color: "gray", fontWeight: "bold", fontSize: "14px" }}> : React.js, Redux-Sagas, ChakraUi </span>
+          </a>
           <br></br>
           Mon projet utilise Chakra UI pour les composants de l'interface utilisateur, permettant aux utilisateurs d'explorer et de présenter des films
           provenant de l'API TMDb. L'application propose divers filtres tels que la recherche par nom, le filtrage par genre et la sélection de langue,
@@ -365,7 +371,10 @@ export const personnalProjectsFr: TimelineItem[] = [
           navigation sans heurts sur plusieurs pages, améliorant l'interaction avec l'utilisateur.
         </p>
         <p style={{ marginTop: "20px" }}>
-          <a href="https://github.com/AmirDahmouni/Weather_APP" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Weather - Application Intuitive de Prévisions Météo</span></a>
+          <a href="https://weather-app-snowy-sigma.vercel.app" style={{ color: "rgb(251 146 60)" }}>
+            <span className="text-center font-bold">Weather - Application Intuitive de Prévisions Météo</span>
+            <span style={{ color: "gray", fontWeight: "bold", fontSize: "14px" }}> : Node.js, Express.js, Mongodb, React.js, context hooks </span>
+          </a>
           <br></br>
           C'est un projet axé sur l'interface conçu en utilisant CSS pour présenter les composants utilisateur. Alimentée par l'API OpenWeatherMap,
           elle offre des prévisions météo hebdomadaires complètes. En exploitant l'API OpenCageData, l'application intègre une détection de géolocalisation.
@@ -381,11 +390,14 @@ export const personnalProjectsFr: TimelineItem[] = [
 
 export const internshipsFr: TimelineItem[] = [
   {
-    date: 'July 2021 - August 2021',
+    date: 'Juillet 2021 - Août 2021',
     location: 'Proxym-IT, Sousse',
     title: 'Ingénieur logiciel',
     content: (
       <p>
+        <a href="" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Feedback</span></a>
+        <span style={{ color: "gray", fontWeight: "bold", fontSize: "14px" }}> : Node.js, Express.js, Mongodb, React.js</span>
+        <br></br>
         Participer au développement d'une application web qui sert de plateforme pour connecter les étudiants et les professeurs afin de recueillir les opinions des étudiants sur l'avancement des cours.
         <br></br>● Mis en œuvre des services web RESTful en utilisant Node.js et Express.js pour permettre des opérations CRUD et une communication fluide entre le front-end, la base de données et le système backend.
         <br></br>● Gérer l'authentification et l'autorisation en utilisant JWT (JSON Web Tokens).
@@ -403,6 +415,7 @@ export const internshipsFr: TimelineItem[] = [
     content: (
       <p>
         <a href="https://fleet.co/" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Fleet</span></a>
+        <span style={{ color: "gray", fontWeight: "bold", fontSize: "14px" }}> : Node.js, Express.js, PostgresQL, React.js, context hooks, Cypress.io </span>
         <br></br> travailler sur une solution de gestion de parc informatique pour les parcs technologiques, en mettant l'accent sur les startups et les PME.
         <br></br>● Mis en place de nouvelles pages de site web et amélioré celles déjà existantes en utilisant Next.js et Contentful (CMS) pour récupérer les données, en utilisant le système de conception Fleet.
         <br></br>● Participer à la mise en œuvre de l'API Locize pour maintenir le site web complet dans 4 langues (anglais, français, espagnol, allemand).
@@ -421,13 +434,14 @@ export const internshipsFr: TimelineItem[] = [
 
 export const experienceFr: TimelineItem[] = [
   {
-    date: 'January 2022 - Present',
+    date: 'Janvier 2023 - Août 2023',
     location: 'Genext Factory, Sousse',
     title: 'Ingénieur logiciel',
     content: (
       <>
         <p>
           <a href="https://www.genextfactory.com/" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold">Genext Factory website</span></a>
+          <span style={{ color: "gray", fontWeight: "bold", fontSize: "14px" }}> : Strapi , React.js, Next.js, i18-next, Reactstrap</span>
           <br></br>● Mis en place de nouvelles pages de site web en utilisant React.js, Next.js et l'API Strapi (CMS) pour récupérer les données, tout en utilisant Reactstrap pour la conception et les composants d'interface utilisateur.
           <br></br>● Intégration de la traduction en utilisant react-i18next, le plugin i18n de Strapi et un dictionnaire local.
           <br></br>● Mis en place plus de 5 tests unitaires en utilisant Jest et React Testing Library pour un composant React complexe.
@@ -435,18 +449,21 @@ export const experienceFr: TimelineItem[] = [
         </p>
         <p style={{ marginTop: "20px" }}>
           <a href="https://dev.edumonde.tn/" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold"> Edumonde </span></a>
+          <span style={{ color: "gray", fontWeight: "bold", fontSize: "14px" }}> : Strapi , React.js, Next.js, i18-next, Tailwind</span>
           <br></br>● Mis en œuvre de nouvelles pages de site web en utilisant React.js, Next.js et l'API Strapi (CMS) pour récupérer les données, en utilisant Reactstrap pour la conception et les composants d'interface utilisateur.
           <br></br>● Utilisation de Strapi pour développer des types de contenu dans le back office et mise en œuvre de crochets de cycle de vie pour partager des cours sur notre solution Saas, Odesco.
           <br></br>● Intégration de la traduction en utilisant le plugin i18n de Strapi dans le back office et la traduction i18next comme dictionnaire local pour la traduction côté front-end.
         </p>
         <p style={{ marginTop: "20px" }}>
           <a href="https://dev-training-center.odesco.education/" style={{ color: "rgb(251 146 60)" }}><span className="text-center font-bold"> Fabulous consulting </span></a>
+          <span style={{ color: "gray", fontWeight: "bold", fontSize: "14px" }}> : Strapi , React.js, Next.js, Tailwind</span>
           <br></br>● Mis en œuvre de nouvelles pages de site web en utilisant React.js, Next.js et l'API Strapi (CMS) pour récupérer les données, en utilisant Reactstrap pour la conception et les composants d'interface utilisateur.
           <br></br>● Utilisation de Strapi pour développer des types de contenu dans le back-office et intégration du plugin Strapi Stripe pour proposer des paiements en ligne via différents modes.
           <br></br>● Intégration de la traduction en utilisant le plugin i18n de Strapi dans le back office et la traduction i18next comme dictionnaire local pour la traduction côté front-end.
         </p>
         <p style={{ marginTop: "20px" }}>
           <span className="text-center font-bold"> ClickStore (soldx) </span>
+          <span style={{ color: "gray", fontWeight: "bold", fontSize: "14px" }}> : Node.js ,Express.js, React.js, Redux-sagas, Reactstrapi</span>
           <br></br>● Mise en place de nouveaux filtres dans le module de produits des points de vente dans le back office.
           <br></br>● Répliquer la configuration au niveau de la catégorie de produits dans le back office.
           <br></br>● Mise en place d'un nouveau point de terminaison pour récupérer les commentaires sur les produits et les magasins en utilisant Node.js, Express.js et MongoDB.
@@ -502,7 +519,7 @@ export const contactFr: ContactSection = {
     },
     {
       type: ContactType.Location,
-      text: 'Sousse, Tunisie',
+      text: "Provence-Alpes-Côte d'Azur, France",
       href: 'https://www.google.ca/maps/place/Sousse/@35.8285312,10.616832,14z/data=!4m6!3m5!1s0x130275759ac9d10d:0x698e3915682cef7d!8m2!3d35.8245029!4d10.634584!16zL20vMDN5djZy?entry=ttu',
     },
     {
