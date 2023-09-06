@@ -19,7 +19,7 @@ import porfolioImage5 from '../images/portfolio/portfolio-5.png';
 import porfolioImage6 from '../images/portfolio/portfolio-6.png';
 import porfolioImage7 from '../images/portfolio/portfolio-7.png';
 import porfolioImage8 from '../images/portfolio/portfolio-8.png';
-import profilepic from '../images/profilepic.png';
+import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
   About,
