@@ -71,7 +71,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/Amir CV.pdf',
+      href: '/assets/CV-Amir.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -495,8 +495,8 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.Phone,
-      text: '+216 26 580 724',
-      href: '',
+      text: '+33 7 56 84 59 97',
+      href: 'tel:+33 7 56 84 59 97',
     },
     {
       type: ContactType.Location,

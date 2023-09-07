@@ -11,7 +11,7 @@ const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({ children, title,
         <title>{title}</title>
         <meta content={description} name="description" />
 
-        <link href={`https://reactresume.com`} key="canonical" rel="canonical" />
+        <link href={``} key="canonical" rel="canonical" />
 
         <link href="/favicon.ico" rel="icon" sizes="any" />
         <link href="/icon.svg" rel="icon" type="image/svg+xml" />

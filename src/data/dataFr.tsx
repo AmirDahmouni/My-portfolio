@@ -62,15 +62,16 @@ export const heroDataFr: Hero = {
         Je suis un <strong className="text-stone-100">Développeur Front-End</strong>,
         très motivé, passionné par les nouveaux défis et déterminé à fournir des résultats exceptionnels.
         Mon approche de travail est centrée sur <strong className="text-stone-100">l'esprit d'équipe </strong>.
-        <br></br>J'ai une forte passion pour résoudre
-        des problèmes complexes. En dehors de mes heures de travail, je m'efforce constamment d'améliorer
-        à la fois mes compétences techniques et mes aptitudes interpersonnelles
+        <br></br>J'ai une forte passion pour résoudre des problèmes complexes. En dehors de mes heures de travail.
+        <br></br>
+        Je m'efforce constamment d'améliorer à la fois mes compétences <strong className="text-stone-100" style={{ color: "rgb(251 146 60)" }}>techniques </strong>
+        et mes aptitudes <strong className="text-stone-100" style={{ color: "rgb(251 146 60)" }}> interpersonnelles </strong>
       </p>
     </>
   ),
   actions: [
     {
-      href: '/assets/Amir CV.pdf',
+      href: '/assets/CV-Amir.pdf',
       text: 'CV',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -493,8 +494,8 @@ export const contactFr: ContactSection = {
     },
     {
       type: ContactType.Phone,
-      text: '+216 26 580 724',
-      href: '',
+      text: '+33 7 56 84 59 97',
+      href: 'tel:+33 7 56 84 59 97',
     },
     {
       type: ContactType.Location,
