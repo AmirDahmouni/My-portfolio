@@ -416,7 +416,7 @@ export const internships: TimelineItem[] = [
 export const experience: TimelineItem[] = [
   {
     date: 'January 2023 - August 2023',
-    location: 'Genext Factory, Sousse',
+    location: 'Genext Factory, Paris',
     title: 'Software Engineer',
     content: (
       <>
